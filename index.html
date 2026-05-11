@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description" content="AI Data Collect — self-hosted, enterprise-grade metadata ingest for AI-capable IP cameras. Deployable in regulated, air-gapped, bandwidth-constrained environments. No video on the wire." />
+  <meta name="description" content="AI Data Collect — a self-hosted platform that captures structured metadata from AI-capable IP cameras and stores it on your hardware. On-premise, air-gap ready, NDAA compliant." />
   <meta name="theme-color" content="#0B1F3A" />
   <meta name="color-scheme" content="light" />
   <link rel="canonical" href="https://aidatacollect.com/" />
 
   <!-- Open Graph / social -->
-  <meta property="og:title" content="AI Data Collect — Camera Analytics. Without the Video." />
-  <meta property="og:description" content="Self-hosted, enterprise-grade metadata ingest for AI-capable IP cameras. On-premise, air-gap ready, NDAA compliant. A ZetaCore Dynamics product." />
+  <meta property="og:title" content="AI Data Collect — Turn Your AI Cameras Into a Data Source" />
+  <meta property="og:description" content="Self-hosted ingest platform for the structured metadata your AI-capable IP cameras already produce. On-premise, air-gap ready, NDAA compliant. A ZetaCore Dynamics product." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://aidatacollect.com/" />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
 
-  <title>AI Data Collect — Camera Analytics Without the Video</title>
+  <title>AI Data Collect — Turn Your AI Cameras Into a Data Source</title>
 
   <!-- Inline SVG favicon -->
   <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='6' fill='%230B1F3A'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='16' font-weight='700' fill='%235B9BF0'>ADC</text></svg>" />
@@ -34,23 +34,26 @@
 </head>
 <body>
 
-<a href="#home" class="skip-link">Skip to content</a>
+<a href="#home" class="visually-hidden-focusable" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" onfocus="this.style.cssText='position:fixed;left:16px;top:16px;background:#0B1F3A;color:#fff;padding:10px 16px;border-radius:4px;z-index:200;width:auto;height:auto;'" onblur="this.style.cssText='position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;'">Skip to content</a>
 
 <!-- NAV -->
 <nav>
   <a href="#home" class="nav-logo" aria-label="AI Data Collect — home">
-    <div class="nav-logo-mark" aria-hidden="true">ADC</div>
-    <div class="nav-logo-text">
-      <div class="prod">AI Data Collect</div>
-      <div class="parent">A ZetaCore Dynamics Product</div>
+    <div class="logo-mark">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="40" height="40" rx="6" fill="#0B1F3A"/>
+        <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="700" fill="#5B9BF0">ADC</text>
+      </svg>
+    </div>
+    <div class="logo-text">
+      <span class="company">AI Data Collect</span>
+      <span class="tagline-small">A ZetaCore Dynamics Product</span>
     </div>
   </a>
   <ul class="nav-links" id="primary-nav">
-    <li><a href="#solution">Solution</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#how">How It Works</a></li>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#industries">Industries</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#poc">Request POC</a></li>
   </ul>
   <a href="#poc" class="nav-cta">Request POC</a>
   <button class="nav-toggle" type="button"
@@ -63,376 +66,212 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <div class="hero-bg-grid" aria-hidden="true"></div>
-  <div class="hero-bg-glow" aria-hidden="true"></div>
-  <div class="hero-content">
-    <div class="hero-badge">Now Accepting POC Applications</div>
-    <h1>Camera Analytics.<br /><em>Without the Video.</em></h1>
-    <p class="hero-sub">
-      AI Data Collect is a self-hosted, enterprise-grade metadata ingest platform for AI-capable IP cameras — deployable in the regulated, air-gapped, bandwidth-constrained environments where every other VMS falls short.
-    </p>
-    <div class="hero-actions">
-      <a href="#poc" class="btn-primary">Request a Proof of Concept</a>
-      <a href="#how" class="btn-ghost">See How It Works</a>
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-eyebrow fade-in">AI Data Collect — Now Accepting POC Applications</div>
+      <h1 class="fade-in">
+        Turn Your AI Cameras Into a <em>Data Source</em>
+      </h1>
+      <p class="hero-desc fade-in">
+        AI Data Collect is a self-hosted platform that captures the structured metadata your AI-capable IP cameras already produce — events, occupancy, dwell, heatmaps — and stores it on your hardware. No video on the wire. No cloud. No GPU.
+      </p>
+      <div class="hero-actions fade-in">
+        <a href="#poc" class="btn-primary">Request a Proof of Concept</a>
+        <a href="#how" class="btn-secondary">See How It Works</a>
+      </div>
     </div>
-    <div class="hero-pills">
-      <div class="hero-pill"><div class="dot" aria-hidden="true"></div>Self-Hosted</div>
-      <div class="hero-pill"><div class="dot" aria-hidden="true"></div>Air-Gap Ready</div>
-      <div class="hero-pill"><div class="dot" aria-hidden="true"></div>No Video on the Wire</div>
-      <div class="hero-pill"><div class="dot" aria-hidden="true"></div>NDAA Compliant</div>
-      <div class="hero-pill"><div class="dot" aria-hidden="true"></div>On-Premise Only</div>
-      <div class="hero-pill"><div class="dot" aria-hidden="true"></div>TLS Everywhere</div>
+    <div class="hero-cards fade-in">
+      <div class="about-card">
+        <div class="about-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Ingest</h3>
+        <p>Subscribes to live camera metadata streams and scheduled statistical reports. No video frames, no streams.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <ellipse cx="12" cy="5" rx="9" ry="3" stroke="white" stroke-width="1.5"/>
+            <path d="M3 5v6c0 1.66 4.03 3 9 3s9-1.34 9-3V5" stroke="white" stroke-width="1.5"/>
+            <path d="M3 11v6c0 1.66 4.03 3 9 3s9-1.34 9-3v-6" stroke="white" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h3>Store</h3>
+        <p>Persists every event to a secure on-premise time-series database with configurable 30/60/90-day retention. Years of analytics in minimal space.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="3" y="9" width="5.5" height="12" rx="0.5" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+            <rect x="9.5" y="6" width="5.5" height="15" rx="0.5" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+            <rect x="16" y="3" width="5" height="18" rx="0.5" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Surface</h3>
+        <p>A secure web portal exposes dashboards, occupancy rollups, alert management, heatmaps, and CSV export — running on your network.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- PROBLEM -->
-<section class="problem" id="problem">
-  <div class="problem-grid">
-    <div>
-      <div class="section-label">The Problem</div>
-      <h2>Traditional VMS Was Not Built for Regulated Environments</h2>
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-text">
+      <div class="section-label">About the Platform</div>
+      <h2>A Data Layer for Your AI Camera Fleet</h2>
       <div class="divider"></div>
-      <p class="section-desc">Every VMS on the market is built around video pipelines — RTSP streams, NVR storage, GPU farms, cloud transcoding, and retention windows measured in days. That architecture fails the industries that need analytics most.</p>
+      <p>Modern IP cameras run AI onboard and produce a continuous stream of structured events. AI Data Collect captures that stream, persists it, and makes it usable — all on hardware you own, in environments with zero outbound internet.</p>
+      <ul class="values-list">
+        <li>
+          <div class="check">
+            <svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 5l2.5 2.5L8 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span>Self-hosted on your hardware — no cloud, no SaaS</span>
+        </li>
+        <li>
+          <div class="check">
+            <svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 5l2.5 2.5L8 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span>Air-gap ready — designed for zero outbound internet</span>
+        </li>
+        <li>
+          <div class="check">
+            <svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 5l2.5 2.5L8 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span>Metadata only — no video on the wire, no GPU required</span>
+        </li>
+        <li>
+          <div class="check">
+            <svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 5l2.5 2.5L8 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span>NDAA &amp; TAA compliance posture built in</span>
+        </li>
+      </ul>
     </div>
-    <div class="problem-cards">
-      <div class="problem-card">
-        <div class="problem-icon" aria-hidden="true">📡</div>
-        <div>
-          <h4>Bandwidth Chokepoint</h4>
-          <p>Streaming video over satellite uplinks, cellular failover, or regulated industrial LANs is impractical or forbidden. Traditional VMS dies here.</p>
+    <div class="about-cards">
+      <div class="about-card">
+        <div class="about-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="3" y="11" width="18" height="11" rx="2" stroke="white" stroke-width="1.5"/>
+            <path d="M7 11V7a5 5 0 0110 0v4" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
         </div>
+        <h3>Security by Architecture</h3>
+        <p>Internal certificate authority, TLS everywhere, encrypted credentials at rest, two-factor authentication, and role-based access control with per-site scoping across every endpoint.</p>
       </div>
-      <div class="problem-card">
-        <div class="problem-icon" aria-hidden="true">💾</div>
-        <div>
-          <h4>Storage Explosion</h4>
-          <p>One week of 4K video storage would fill the space a full year of analytics requires. Retention becomes a hardware problem instead of a policy knob.</p>
+      <div class="about-card">
+        <div class="about-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </div>
+        <h3>One-Shot Install</h3>
+        <p>A single install script with port pre-flight, automatic shift on collision, post-install shortcuts, encrypted access codes, and an end-to-end first-run setup wizard. Deployable in restricted environments.</p>
       </div>
-      <div class="problem-card">
-        <div class="problem-icon" aria-hidden="true">⚖️</div>
-        <div>
-          <h4>Compliance Minefield</h4>
-          <p>Video triggers extensive legal review in banking, cannabis, corrections, and government. Privacy regulations block deployment before it starts.</p>
+      <div class="about-card">
+        <div class="about-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" stroke="white" stroke-width="1.5"/>
+            <path d="M12 6v6l4 2" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
         </div>
+        <h3>Unified Retention</h3>
+        <p>30/60/90-day configurable retention with automatic heatmap and snapshot purge. Retention is a deployment knob, not a storage procurement conversation.</p>
       </div>
-      <div class="problem-card">
-        <div class="problem-icon" aria-hidden="true">☁️</div>
-        <div>
-          <h4>Cloud Dependency</h4>
-          <p>Cloud-first VMS cannot operate in air-gapped networks, government-restricted environments, or facilities with zero outbound internet policy.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- COMPARISON TABLE -->
-<section class="comparison">
-  <div class="section-label">ADC vs. Traditional VMS</div>
-  <h2>A Fundamentally Different Architecture</h2>
-  <p class="section-desc">ADC doesn't compete with your VMS — it fills the gaps your VMS was never designed to reach.</p>
-  <div class="compare-table-wrap">
-    <table class="compare-table">
-      <thead>
-        <tr>
-          <th scope="col">Capability</th>
-          <th scope="col"><span aria-hidden="true">❌ </span>Traditional VMS</th>
-          <th scope="col"><span aria-hidden="true">✅ </span>AI Data Collect</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Video-free operation</td><td class="icon-no"><span aria-hidden="true">✗ </span>Requires video pipeline</td><td class="icon-yes"><span aria-hidden="true">✓ </span>Metadata only, no video</td></tr>
-        <tr><td>Air-gap / no internet</td><td class="icon-no"><span aria-hidden="true">✗ </span>Cloud-dependent</td><td class="icon-yes"><span aria-hidden="true">✓ </span>Zero outbound internet required</td></tr>
-        <tr><td>Low bandwidth deployment</td><td class="icon-no"><span aria-hidden="true">✗ </span>High bandwidth required</td><td class="icon-yes"><span aria-hidden="true">✓ </span>Works on satellite &amp; cellular</td></tr>
-        <tr><td>1-year analytics storage</td><td class="icon-no"><span aria-hidden="true">✗ </span>7–30 days of video</td><td class="icon-yes"><span aria-hidden="true">✓ </span>Years of events, minimal storage</td></tr>
-        <tr><td>Privacy-safe for regulated sites</td><td class="icon-no"><span aria-hidden="true">✗ </span>Video triggers legal review</td><td class="icon-yes"><span aria-hidden="true">✓ </span>No video, no privacy minefield</td></tr>
-        <tr><td>On-premise deployment</td><td class="icon-no"><span aria-hidden="true">✗ </span>Often cloud-first</td><td class="icon-yes"><span aria-hidden="true">✓ </span>Self-hosted, customer-owned box</td></tr>
-        <tr><td>NDAA/TAA compliance path</td><td class="icon-no"><span aria-hidden="true">✗ </span>Often not supported</td><td class="icon-yes"><span aria-hidden="true">✓ </span>Built-in compliance posture</td></tr>
-        <tr><td>GPU requirement</td><td class="icon-no"><span aria-hidden="true">✗ </span>GPU farm required</td><td class="icon-yes"><span aria-hidden="true">✓ </span>No GPU needed — camera does the AI</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<!-- SOLUTION -->
-<section class="solution" id="solution">
-  <div class="section-label">The Solution</div>
-  <h2>Why ADC Wins Where VMS Cannot</h2>
-  <p class="section-desc">ADC ingests structured metadata directly from the camera's onboard AI — not the video stream. The result is a platform that runs where nothing else can.</p>
-  <div class="solution-grid">
-    <div class="solution-card">
-      <div class="solution-icon" aria-hidden="true">📡</div>
-      <h3>Bandwidth — Solved</h3>
-      <p>Metadata packets are tiny. ADC runs on industrial LANs, cellular failover, and satellite uplinks — anywhere streaming video would be impractical, cost-prohibitive, or outright forbidden by policy.</p>
-    </div>
-    <div class="solution-card">
-      <div class="solution-icon" aria-hidden="true">💾</div>
-      <h3>Storage — Solved</h3>
-      <p>A full year of structured event analytics fits where one week of 4K video would. 30/60/90-day retention is a configuration knob, not a hardware procurement project.</p>
-    </div>
-    <div class="solution-card">
-      <div class="solution-icon" aria-hidden="true">⚖️</div>
-      <h3>Compliance — Solved</h3>
-      <p>No video means no privacy minefield. Banks, schools, cannabis operators, corrections facilities, and government sites deploy ADC without the legal review that video systems trigger at every step.</p>
-    </div>
-    <div class="solution-card">
-      <div class="solution-icon" aria-hidden="true">🔒</div>
-      <h3>Air-Gap — Solved</h3>
-      <p>Designed to run with zero outbound internet. Internal certificate authority, Fernet-encrypted credentials at rest, TLS everywhere, and offline license activation in the roadmap.</p>
     </div>
   </div>
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="how" id="how">
+<section class="projects" id="how">
   <div class="section-label">How It Works</div>
-  <h2>Simple by Design. Powerful by Architecture.</h2>
-  <p class="section-desc">ADC sits between your existing AI cameras and your operations team — no new hardware, no video, no cloud.</p>
-  <div class="how-flow">
-    <div class="how-step">
-      <div class="how-step-num" aria-hidden="true">1</div>
-      <div class="how-step-icon" aria-hidden="true">📷</div>
+  <h2>Camera → ADC → Portal</h2>
+  <p class="section-desc">
+    Three pieces. No new hardware on the camera side. No cloud anywhere.
+  </p>
+  <div class="projects-grid">
+    <div class="project-card">
+      <span class="project-badge">Step 1</span>
       <h3>Your AI Camera</h3>
-      <p>Your existing Hanwha, Axis, or Bosch AI-capable IP cameras detect events onboard — line crossings, occupancy, queues, heatmaps — using their built-in AI chip. No GPU server needed.</p>
+      <p>Your existing Hanwha AI-capable IP cameras detect events onboard — line crossings, occupancy, queues, heatmaps — using their built-in AI chip. Axis and Bosch support in progress.</p>
+      <div class="project-tags">
+        <span class="project-tag">Hanwha</span>
+        <span class="project-tag">Axis Coming</span>
+        <span class="project-tag">Bosch Coming</span>
+      </div>
     </div>
-    <div class="how-arrow" aria-hidden="true">→</div>
-    <div class="how-step">
-      <div class="how-step-num" aria-hidden="true">2</div>
-      <div class="how-step-icon" aria-hidden="true">⚙️</div>
+    <div class="project-card">
+      <span class="project-badge">Step 2</span>
       <h3>AI Data Collect</h3>
-      <p>ADC ingests structured metadata via MQTT (live streaming) and SFTP (scheduled statistical reports). Events are processed, validated, and persisted to TimescaleDB on your hardware — zero video, zero cloud.</p>
+      <p>ADC ingests structured metadata via secure live streaming and scheduled report channels. Events are validated and persisted to an on-premise time-series database — zero video, zero cloud.</p>
+      <div class="project-tags">
+        <span class="project-tag">Live Streaming</span>
+        <span class="project-tag">Scheduled Reports</span>
+        <span class="project-tag">On-Premise DB</span>
+      </div>
     </div>
-    <div class="how-arrow" aria-hidden="true">→</div>
-    <div class="how-step">
-      <div class="how-step-num" aria-hidden="true">3</div>
-      <div class="how-step-icon" aria-hidden="true">📊</div>
+    <div class="project-card">
+      <span class="project-badge">Step 3</span>
       <h3>Your Secure Portal</h3>
-      <p>Your team accesses real-time monitoring, occupancy analytics, alert management, heatmaps, and daily intelligence reports through a secure, role-based React portal — all running on your network.</p>
-    </div>
-  </div>
-  <div class="how-tech">
-    <div class="how-tech-tag">MQTT via EMQX</div>
-    <div class="how-tech-tag">SFTPGo</div>
-    <div class="how-tech-tag">TimescaleDB</div>
-    <div class="how-tech-tag">React Portal</div>
-    <div class="how-tech-tag">TLS Everywhere</div>
-    <div class="how-tech-tag">Internal CA</div>
-    <div class="how-tech-tag">Fernet Encryption</div>
-    <div class="how-tech-tag">JWT + TOTP 2FA</div>
-    <div class="how-tech-tag">RBAC v2</div>
-  </div>
-</section>
-
-<!-- FEATURES -->
-<section class="features" id="features">
-  <div class="section-label">Features</div>
-  <h2>Built. Not Promised.</h2>
-  <p class="section-desc">Everything below is production-ready today — not a roadmap item, not a beta feature. This is what you get in a POC.</p>
-  <div class="features-grid">
-    <div class="feature-item">
-      <div class="feature-icon" aria-hidden="true">⚡</div>
-      <div class="feature-title">One-Shot Install</div>
-      <div class="feature-desc">install.sh with port pre-flight, auto-shift on collision, post-install shortcuts, encrypted access codes, and an end-to-end first-run setup wizard.</div>
-    </div>
-    <div class="feature-item">
-      <div class="feature-icon" aria-hidden="true">🛡️</div>
-      <div class="feature-title">Hardened Authentication</div>
-      <div class="feature-desc">JWT + TOTP 2FA, invite-link onboarding, RBAC v2 with 14 named permissions, per-site data scoping enforced across 204 endpoints, and a full audit log.</div>
-    </div>
-    <div class="feature-item">
-      <div class="feature-icon" aria-hidden="true">📊</div>
-      <div class="feature-title">Customer Dashboard</div>
-      <div class="feature-desc">5-tile health board, since-yesterday delta indicators, sites rollup, multi-card camera-group occupancy with daily and weekly chart views.</div>
-    </div>
-    <div class="feature-item">
-      <div class="feature-icon" aria-hidden="true">🔔</div>
-      <div class="feature-title">Full Alerts Engine</div>
-      <div class="feature-desc">Cooldown, snooze, multi-event-type, day-of-week schedule, multi-window, per-zone alerts with Slack, Email, Teams, and Webhook delivery. Per-alert JPEG snapshot capture.</div>
-      <div class="feature-tags"><span class="feature-tag">Slack</span><span class="feature-tag">Email</span><span class="feature-tag">Teams</span><span class="feature-tag">Webhooks</span></div>
-    </div>
-    <div class="feature-item">
-      <div class="feature-icon" aria-hidden="true">🔍</div>
-      <div class="feature-title">Investigation Surface</div>
-      <div class="feature-desc">Alert detail pages with neighbor event tables, thumbnails, CSV export, and deep-links from dashboard health tiles for rapid operational response.</div>
-    </div>
-    <div class="feature-item">
-      <div class="feature-icon" aria-hidden="true">📷</div>
-      <div class="feature-title">Camera Driver Pack v2</div>
-      <div class="feature-desc">Driver-pack architecture handling Hanwha firmware variation across W5/W7/W8/W9/X+/fisheye/multisensor. Sandbox tester, capability oracle, signed validators.</div>
-      <div class="feature-tags"><span class="feature-tag">Hanwha</span><span class="feature-tag">Axis Coming</span><span class="feature-tag">Bosch Coming</span></div>
-    </div>
-    <div class="feature-item">
-      <div class="feature-icon" aria-hidden="true">🔐</div>
-      <div class="feature-title">Security Infrastructure</div>
-      <div class="feature-desc">TLS-by-default MQTT with internal CA, SFTPGo for camera reports, Fernet-encrypted credentials at rest, with backup and restore including pre-restore validation.</div>
-    </div>
-    <div class="feature-item">
-      <div class="feature-icon" aria-hidden="true">⏱️</div>
-      <div class="feature-title">Unified Retention</div>
-      <div class="feature-desc">30/60/90-day configurable retention policies with automatic heatmap and snapshot purge. Retention is a deployment knob — not a storage procurement conversation.</div>
-    </div>
-    <div class="feature-item">
-      <div class="feature-icon" aria-hidden="true">🏭</div>
-      <div class="feature-title">Industry Presets</div>
-      <div class="feature-desc">11 industries across 4 buckets — each with shipped configuration presets so your deployment starts correctly calibrated for your operational environment.</div>
+      <p>Your team accesses real-time monitoring, occupancy analytics, alert management, heatmaps, and CSV export through a secure, role-based web portal — all running on your network.</p>
+      <div class="project-tags">
+        <span class="project-tag">Secure Portal</span>
+        <span class="project-tag">Role-Based Access</span>
+        <span class="project-tag">2FA</span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- INDUSTRIES -->
-<section class="industries" id="industries">
-  <div class="section-label">Target Industries</div>
-  <h2>Built for the Industries That Cannot Afford to Fail</h2>
-  <p class="section-desc">ADC ships with configuration presets for 11 industries across 4 operational buckets — each calibrated for the specific metadata events, compliance pressures, and operational realities of that vertical.</p>
-  <div class="industry-buckets">
-    <div class="industry-bucket">
-      <div class="bucket-header">
-        <div class="bucket-icon" aria-hidden="true">🏦</div>
-        <div class="bucket-name">Regulated Retail</div>
-      </div>
-      <ul class="industry-list">
-        <li>
-          <div class="industry-name-row"><div class="industry-dot" aria-hidden="true"></div><div class="industry-name">Banking &amp; Finance</div></div>
-          <div class="industry-use">Vault dual-custody, ATM casing detection, branch queue analytics</div>
-        </li>
-        <li>
-          <div class="industry-name-row"><div class="industry-dot" aria-hidden="true"></div><div class="industry-name">Cannabis &amp; Dispensaries</div></div>
-          <div class="industry-use">Seed-to-sale compliance, weapon/loiter detection, 24/7 high-risk inventory monitoring</div>
-        </li>
-        <li>
-          <div class="industry-name-row"><div class="industry-dot" aria-hidden="true"></div><div class="industry-name">Retail</div></div>
-          <div class="industry-use">Queue management, conversion analytics, foot traffic vs POS correlation</div>
-        </li>
-      </ul>
-    </div>
-    <div class="industry-bucket">
-      <div class="bucket-header">
-        <div class="bucket-icon" aria-hidden="true">🏭</div>
-        <div class="bucket-name">Industrial &amp; Logistics</div>
-      </div>
-      <ul class="industry-list">
-        <li>
-          <div class="industry-name-row"><div class="industry-dot" aria-hidden="true"></div><div class="industry-name">Energy &amp; Oil &amp; Gas</div></div>
-          <div class="industry-use">PPE compliance, remote-site heartbeat over satellite uplink</div>
-        </li>
-        <li>
-          <div class="industry-name-row"><div class="industry-dot" aria-hidden="true"></div><div class="industry-name">Manufacturing</div></div>
-          <div class="industry-use">Cycle time tracking, forklift-person near-miss detection</div>
-        </li>
-        <li>
-          <div class="industry-name-row"><div class="industry-dot" aria-hidden="true"></div><div class="industry-name">Logistics &amp; Data Centers</div></div>
-          <div class="industry-use">Dock door occupancy, demurrage tracking, server-aisle dwell monitoring</div>
-        </li>
-        <li>
-          <div class="industry-name-row"><div class="industry-dot" aria-hidden="true"></div><div class="industry-name">Airports &amp; Aviation</div></div>
-          <div class="industry-use">Wrong-way detection, TSA throughput, sterile/non-sterile zone monitoring</div>
-        </li>
-        <li>
-          <div class="industry-name-row"><div class="industry-dot" aria-hidden="true"></div><div class="industry-name">Intelligent Transportation</div></div>
-          <div class="industry-use">Smart intersections, stopped-vehicle detection, debris incident response</div>
-        </li>
-      </ul>
-    </div>
-    <div class="industry-bucket">
-      <div class="bucket-header">
-        <div class="bucket-icon" aria-hidden="true">🏛️</div>
-        <div class="bucket-name">Public Sector</div>
-      </div>
-      <ul class="industry-list">
-        <li>
-          <div class="industry-name-row"><div class="industry-dot" aria-hidden="true"></div><div class="industry-name">Government &amp; Corrections</div></div>
-          <div class="industry-use">Inmate group-density monitoring, thermal perimeter breach, air-gapped deployment</div>
-        </li>
-        <li>
-          <div class="industry-name-row"><div class="industry-dot" aria-hidden="true"></div><div class="industry-name">Education</div></div>
-          <div class="industry-use">After-hours vandalism detection, occupancy-to-HVAC efficiency, campus safety</div>
-        </li>
-      </ul>
-    </div>
-    <div class="industry-bucket">
-      <div class="bucket-header">
-        <div class="bucket-icon" aria-hidden="true">🏟️</div>
-        <div class="bucket-name">Crowd Venues</div>
-      </div>
-      <ul class="industry-list">
-        <li>
-          <div class="industry-name-row"><div class="industry-dot" aria-hidden="true"></div><div class="industry-name">Stadiums &amp; Venues</div></div>
-          <div class="industry-use">Gate-density heatmaps, merch-kiosk dwell, ingress/egress crowd flow</div>
-        </li>
-        <li>
-          <div class="industry-name-row"><div class="industry-dot" aria-hidden="true"></div><div class="industry-name">Retail &amp; Shopping</div></div>
-          <div class="industry-use">Customer journey mapping, peak traffic analysis, conversion optimization</div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ROADMAP -->
-<section class="roadmap" id="roadmap">
-  <div class="section-label">Roadmap</div>
-  <h2>Where AI Data Collect Is Going</h2>
-  <p class="section-desc">The platform is production-ready today. Here's what's coming next — all designed around real operational needs from our target verticals.</p>
-  <div class="roadmap-list">
-    <div class="roadmap-item">
-      <div class="roadmap-badge">In Design</div>
-      <div class="roadmap-icon" aria-hidden="true">🔑</div>
-      <h4>Per-Device Licensing</h4>
-      <p>Hybrid online/offline activation with a vendor-run license portal — designed for air-gapped environments where offline activation is mandatory.</p>
-    </div>
-    <div class="roadmap-item">
-      <div class="roadmap-badge">In Design</div>
-      <div class="roadmap-icon" aria-hidden="true">📷</div>
-      <h4>Multi-Vendor Camera Support</h4>
-      <p>Axis and Bosch Camera Driver Packs expanding compatibility beyond Hanwha — covering the most widely deployed AI camera brands in enterprise environments.</p>
-    </div>
-    <div class="roadmap-item">
-      <div class="roadmap-badge">Planned</div>
-      <div class="roadmap-icon" aria-hidden="true">🌐</div>
-      <h4>Hub-and-Spoke Management</h4>
-      <p>One login across 30+ sites. Each box remains fully self-sufficient if the hub goes offline — critical for multi-location regulated deployments.</p>
-    </div>
-    <div class="roadmap-item">
-      <div class="roadmap-badge">Planned</div>
-      <div class="roadmap-icon" aria-hidden="true">🔗</div>
-      <h4>VMS Integrations</h4>
-      <p>Genetec, Milestone, and Hanwha WAVE webhook integrations. ADC stays the analytics brain — your existing VMS stays the video layer. Best of both worlds.</p>
-    </div>
-    <div class="roadmap-item">
-      <div class="roadmap-badge">Planned</div>
-      <div class="roadmap-icon" aria-hidden="true">📦</div>
-      <h4>Packaged Distributions</h4>
-      <p>Per-industry ISO images, appliance images, and cloud-marketplace AMIs for simplified deployment across all target verticals and environments.</p>
-    </div>
-    <div class="roadmap-item">
-      <div class="roadmap-badge">Planned</div>
-      <div class="roadmap-icon" aria-hidden="true">📋</div>
-      <h4>Public Compatibility Directory</h4>
-      <p>A publicly accessible supported-cameras directory and integrator compatibility website — making it easy for system integrators to spec ADC into new deployments.</p>
-    </div>
-  </div>
-</section>
-
-<!-- POC -->
-<section class="poc" id="poc">
-  <div class="poc-inner">
-    <div class="poc-text">
-      <div class="section-label" style="color: var(--accent-light);">Proof of Concept</div>
+<!-- POC / CONTACT -->
+<section class="contact" id="poc">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <div class="section-label">Proof of Concept</div>
       <h2>See It Running in Your Environment</h2>
       <div class="divider"></div>
-      <p>We're accepting a limited number of POC deployments across our target verticals. A POC gives you a full production install of AI Data Collect running on your hardware, connected to your cameras, processing your data.</p>
-      <ul class="poc-bullets">
-        <li><div class="poc-check" aria-hidden="true"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Full system install — not a demo environment</li>
-        <li><div class="poc-check" aria-hidden="true"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Your own cameras, your own data</li>
-        <li><div class="poc-check" aria-hidden="true"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>90-day evaluation period at no cost</li>
-        <li><div class="poc-check" aria-hidden="true"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>NDA and POC agreement provided</li>
-        <li><div class="poc-check" aria-hidden="true"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Direct access to the engineering team</li>
-        <li><div class="poc-check" aria-hidden="true"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Hanwha cameras supported today</li>
+      <p>We're accepting a limited number of POC deployments. A POC gives you a full production install of AI Data Collect running on your hardware, connected to your cameras, processing your data.</p>
+      <ul class="values-list">
+        <li>
+          <div class="check"><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 5l2.5 2.5L8 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <span>Full system install — not a demo environment</span>
+        </li>
+        <li>
+          <div class="check"><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 5l2.5 2.5L8 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <span>Your own cameras, your own data</span>
+        </li>
+        <li>
+          <div class="check"><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 5l2.5 2.5L8 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <span>90-day evaluation period at no cost</span>
+        </li>
+        <li>
+          <div class="check"><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 5l2.5 2.5L8 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <span>NDA and POC agreement provided</span>
+        </li>
+        <li>
+          <div class="check"><svg viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 5l2.5 2.5L8 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <span>Direct access to the engineering team</span>
+        </li>
       </ul>
+      <div class="contact-detail">
+        <div class="contact-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#2E7AE0" stroke-width="1.5"/>
+            <path d="M22 6l-10 7L2 6" stroke="#2E7AE0" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="contact-detail-text">
+          <div class="contact-detail-label">POC Inquiries</div>
+          <div class="contact-detail-value"><a href="mailto:info@aidatacollect.com">info@aidatacollect.com</a></div>
+        </div>
+      </div>
     </div>
-    <form class="poc-form" id="poc-form" novalidate>
+    <form class="contact-form" id="poc-form" novalidate>
       <h3>Request a POC</h3>
       <div class="form-row">
         <div class="form-group">
@@ -453,24 +292,6 @@
         <input id="poc-company" name="company" type="text" autocomplete="organization" placeholder="Your Organization" />
       </div>
       <div class="form-group">
-        <label for="poc-industry">Industry</label>
-        <select id="poc-industry" name="industry">
-          <option value="">Select your industry...</option>
-          <option>Banking &amp; Finance</option>
-          <option>Cannabis &amp; Dispensaries</option>
-          <option>Energy &amp; Oil &amp; Gas</option>
-          <option>Manufacturing</option>
-          <option>Logistics &amp; Data Centers</option>
-          <option>Airports &amp; Aviation</option>
-          <option>Intelligent Transportation</option>
-          <option>Government &amp; Corrections</option>
-          <option>Education</option>
-          <option>Stadiums &amp; Venues</option>
-          <option>Retail</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="form-group">
         <label for="poc-cameras">Camera Brand &amp; Approximate Count</label>
         <input id="poc-cameras" name="cameras" type="text" placeholder="e.g. Hanwha, approx. 24 cameras" />
       </div>
@@ -480,7 +301,6 @@
       </div>
       <button class="form-submit" type="submit">Submit POC Request</button>
       <p class="form-status" role="status" aria-live="polite"></p>
-      <div class="form-note">We review all POC applications within 2 business days. NDA provided before any technical discussion.</div>
     </form>
   </div>
 </section>
@@ -489,22 +309,34 @@
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
-      <div class="prod">AI Data Collect</div>
-      <div class="parent">A product of <a href="https://zetacoredynamics.com">ZetaCore Dynamics LLC</a> — Denton County, Texas</div>
+      <div class="company">AI Data Collect</div>
+      <p>A self-hosted platform that turns AI-capable IP cameras into a structured data source. A product of <a href="https://zetacoredynamics.com">ZetaCore Dynamics LLC</a>, Texas.</p>
     </div>
-    <ul class="footer-links">
-      <li><a href="#solution">Solution</a></li>
-      <li><a href="#how">How It Works</a></li>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#industries">Industries</a></li>
-      <li><a href="#roadmap">Roadmap</a></li>
-      <li><a href="#poc">Request POC</a></li>
-      <li><a href="mailto:info@aidatacollect.com">info@aidatacollect.com</a></li>
-    </ul>
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#poc">Request POC</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Family</h4>
+      <ul>
+        <li><a href="https://zetacoredynamics.com">ZetaCore Dynamics</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:info@aidatacollect.com">info@aidatacollect.com</a></li>
+        <li><a href="#poc">Denton County, Texas</a></li>
+      </ul>
+    </div>
   </div>
   <div class="footer-bottom">
     <span>&copy; 2026 ZetaCore Dynamics LLC. All rights reserved. AI Data Collect is a trademark of ZetaCore Dynamics LLC.</span>
-    <span>Built in Texas <span aria-hidden="true">🤠</span></span>
+    <span>Built in Texas &nbsp;🤠</span>
   </div>
 </footer>
 
