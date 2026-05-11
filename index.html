@@ -27,10 +27,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/main.css?v=20260511b" />
 
   <!-- Behavior -->
-  <script src="js/main.js" defer></script>
+  <script src="js/main.js?v=20260511b" defer></script>
 </head>
 <body>
 
@@ -267,12 +267,18 @@
         </div>
         <div class="contact-detail-text">
           <div class="contact-detail-label">POC Inquiries</div>
-          <div class="contact-detail-value"><a href="mailto:info@aidatacollect.com">info@aidatacollect.com</a></div>
+          <div class="contact-detail-value"><a href="mailto:info@zetacoredynamics.com">info@zetacoredynamics.com</a></div>
         </div>
       </div>
     </div>
-    <form class="contact-form" id="poc-form" novalidate>
+    <form class="contact-form" id="poc-form"
+          action="https://formspree.io/f/mkoykqww"
+          method="POST" novalidate>
       <h3>Request a POC</h3>
+      <!-- Honeypot: hidden from humans, bots fill it in and get dropped -->
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"
+             style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true" />
+      <input type="hidden" name="_subject" value="New POC Request — AI Data Collect" />
       <div class="form-row">
         <div class="form-group">
           <label for="poc-first-name">First Name</label>
@@ -329,7 +335,7 @@
     <div class="footer-links">
       <h4>Contact</h4>
       <ul>
-        <li><a href="mailto:info@aidatacollect.com">info@aidatacollect.com</a></li>
+        <li><a href="mailto:info@zetacoredynamics.com">info@zetacoredynamics.com</a></li>
         <li><a href="#poc">Denton County, Texas</a></li>
       </ul>
     </div>
