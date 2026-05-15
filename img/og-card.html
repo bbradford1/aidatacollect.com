@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>AI Data Collect — OG Card Preview (1200×630)</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #1a1a1a; }
+
+  @font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: block;
+    src: url('../fonts/cormorant-garamond-v21-latin.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 300 600;
+    font-display: block;
+    src: url('../fonts/dm-sans-v17-latin.woff2') format('woff2');
+  }
+
+  /* Card frame — exact 1200×630 for screenshot */
+  .card {
+    width: 1200px;
+    height: 630px;
+    position: relative;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at 80% 30%, rgba(46,122,224,0.25), transparent 55%),
+      linear-gradient(135deg, #0B1F3A 0%, #162E52 60%, #1A4B8C 100%);
+    color: #fff;
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  /* Subtle grid overlay */
+  .card::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+    mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+    pointer-events: none;
+  }
+
+  /* Left accent bar */
+  .card::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 6px;
+    background: linear-gradient(180deg, #2E7AE0 0%, #5B9BF0 100%);
+  }
+
+  .content {
+    position: relative;
+    height: 100%;
+    padding: 64px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* Top row: brand */
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .brand-mark {
+    width: 48px; height: 48px;
+    background: #0B1F3A;
+    border: 1px solid rgba(91,155,240,0.4);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #5B9BF0;
+    letter-spacing: 0.5px;
+  }
+  .brand-name {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #fff;
+  }
+  .brand-sub {
+    font-size: 12px;
+    font-weight: 500;
+    color: #5B9BF0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 16px;
+    padding-left: 16px;
+    border-left: 1px solid rgba(91,155,240,0.4);
+  }
+
+  /* Middle: headline + sub */
+  .headline {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 84px;
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: #fff;
+    max-width: 920px;
+  }
+  .headline em {
+    font-style: italic;
+    color: #5B9BF0;
+  }
+  .subhead {
+    margin-top: 28px;
+    font-size: 22px;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.85);
+    max-width: 820px;
+    font-weight: 300;
+  }
+
+  /* Bottom row: tags + URL */
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .tags {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .tag {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #5B9BF0;
+    padding: 8px 16px;
+    border: 1px solid rgba(91,155,240,0.45);
+    border-radius: 4px;
+    background: rgba(46,122,224,0.08);
+  }
+  .url {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.5px;
+  }
+
+  /* Hint for the person screenshotting — hidden when printed/screenshotted at exact size */
+  .hint {
+    position: fixed;
+    bottom: 8px; right: 8px;
+    font-family: system-ui, sans-serif;
+    font-size: 11px;
+    color: #888;
+    background: rgba(0,0,0,0.6);
+    padding: 4px 8px;
+    border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="content">
+      <div class="brand">
+        <div class="brand-mark">ADC</div>
+        <div class="brand-name">AI Data Collect</div>
+        <div class="brand-sub">A ZetaCore Dynamics Product</div>
+      </div>
+
+      <div>
+        <div class="headline">
+          Turn Your AI Cameras<br>Into a <em>Data Source</em>
+        </div>
+        <div class="subhead">
+          A self-hosted metadata ingest platform for AI-capable IP cameras. On-premise. Air-gap ready. NDAA compliant.
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="tags">
+          <span class="tag">On-Premise</span>
+          <span class="tag">NDAA</span>
+          <span class="tag">Air-Gap Ready</span>
+        </div>
+        <div class="url">aidatacollect.com</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hint">Card is exactly 1200×630. Screenshot the dark rectangle, save as img/og-image.png.</div>
+</body>
+</html>
