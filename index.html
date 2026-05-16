@@ -4,9 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="description" content="AI Data Collect — a self-hosted platform that captures structured metadata from AI-capable IP cameras and stores it on your hardware. On-premise, air-gap ready, NDAA compliant." />
-  <meta name="theme-color" content="#0B1F3A" />
-  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#0A0B0E" />
+  <meta name="color-scheme" content="dark light" />
   <link rel="canonical" href="https://aidatacollect.com/" />
+
+  <!-- Apply persisted theme before paint to avoid flash. Default is dark; ?theme=light|blue|dark overrides for preview/sharing. -->
+  <script>
+    (function () {
+      try {
+        var m = location.search.match(/[?&]theme=([a-z-]+)/);
+        var stored = localStorage.getItem('adc-theme');
+        var t = m ? m[1] : (stored || 'dark');
+        if (t && t !== 'light') {
+          document.documentElement.setAttribute('data-theme', t);
+        }
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
 
   <!-- Open Graph / social -->
   <meta property="og:title" content="AI Data Collect — Turn Your AI Cameras Into a Data Source" />
@@ -27,10 +43,10 @@
   <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='6' fill='%230B1F3A'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='16' font-weight='700' fill='%235B9BF0'>ADC</text></svg>" />
 
   <!-- Stylesheet (self-hosted fonts loaded via @font-face inside) -->
-  <link rel="stylesheet" href="css/main.css?v=20260515" />
+  <link rel="stylesheet" href="css/main.css?v=20260516" />
 
   <!-- Behavior -->
-  <script src="js/main.js?v=20260515" defer></script>
+  <script src="js/main.js?v=20260516" defer></script>
 </head>
 <body>
 
@@ -55,6 +71,20 @@
     <li><a href="#how">How It Works</a></li>
     <li><a href="#poc">Request POC</a></li>
   </ul>
+  <button class="theme-toggle" type="button"
+          aria-label="Switch theme"
+          title="Switch theme">
+    <svg class="theme-icon theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+    </svg>
+    <svg class="theme-icon theme-icon-blue" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2.5c-3 4.5-6 7.5-6 11.5a6 6 0 0 0 12 0c0-4-3-7-6-11.5z"/>
+    </svg>
+    <svg class="theme-icon theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/>
+    </svg>
+  </button>
   <a href="#poc" class="nav-cta">Request POC</a>
   <button class="nav-toggle" type="button"
           aria-label="Open navigation menu"
