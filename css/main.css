@@ -1108,7 +1108,7 @@ footer {
 /* ===== Dashboard showcase ===== */
 .showcase-frame{
   max-width: 1000px;
-  margin: 8px auto 0;
+  margin: 8px auto 0 0;
   padding: 10px;
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
